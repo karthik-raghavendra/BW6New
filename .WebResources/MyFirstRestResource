@@ -1,0 +1,28 @@
+{
+  "apiVersion" : "4.0",
+  "swaggerVersion" : "1.2",
+  "basePath" : "http://localhost:8080",
+  "resourcePath" : "/MyFirstRestResource",
+  "apis" : [ {
+    "path" : "/myfirstrestresource/",
+    "description" : "",
+    "operations" : [ {
+      "method" : "POST",
+      "nickname" : "postMyfirstrestresource",
+      "responseClass" : "string",
+      "parameters" : [ {
+        "paramType" : "body",
+        "type" : "string",
+        "required" : "true",
+        "allowMultiple" : "false"
+      } ],
+      "summary" : null,
+      "notes" : null,
+      "responseMessages" : [ ],
+      "consumes" : [ "application/json" ],
+      "produces" : [ "application/json" ]
+    } ]
+  } ],
+  "models" : { },
+  "authorizations" : { }
+}

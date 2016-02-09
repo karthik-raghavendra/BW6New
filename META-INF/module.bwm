@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_kVBYoMXmEeWz5v6D_mBN7g" targetNamespace="http://tns.tibco.com/bw/composite/MyFirstProject" name="MyFirstProject" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_n-qcAsXqEeWz5v6D_mBN7g" name="Myfirstrestresource" promote="ComponentMyFirstRestResource/Myfirstrestresource">
+    <sca:interface.wsdl xmi:id="_n-zl8sXqEeWz5v6D_mBN7g" interface="http://www.example.com/namespaces/tns/1454004719142#wsdl.interface(Myfirstrestresource)" scaext:wsdlLocation="../Service%20Descriptors/MyFirstRestResource.wsdl"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_n-9W8MXqEeWz5v6D_mBN7g" name="RestService" path="/myfirstrestresource" docBasePath="http://localhost:7777/MyFirstProject" docResourcePath="MyFirstRestResource" connector="myfirstproject.MyFirstRestResource" structuredData="true">
+      <operation xmi:id="_n_HH8MXqEeWz5v6D_mBN7g" operationName="post" nickname="postMyfirstrestresource" httpMethod="POST"/>
+      <parameters xmi:id="_opbQQMXqEeWz5v6D_mBN7g"/>
+      <clientFormat>JSON</clientFormat>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_oB7ycMXqEeWz5v6D_mBN7g" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_lvB4gMXmEeWz5v6D_mBN7g" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvLCcMXmEeWz5v6D_mBN7g" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvUzcMXmEeWz5v6D_mBN7g" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvekcMXmEeWz5v6D_mBN7g" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvekccXmEeWz5v6D_mBN7g" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvnuYMXmEeWz5v6D_mBN7g" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvxfYMXmEeWz5v6D_mBN7g" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lvxfYcXmEeWz5v6D_mBN7g" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_lv7QYMXmEeWz5v6D_mBN7g" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_lXx2IMXmEeWz5v6D_mBN7g" name="ComponentMyFirstProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_lX7nIMXmEeWz5v6D_mBN7g" processName="myfirstproject.MyFirstProcess"/>
+  </sca:component>
+  <sca:component xmi:id="_n-grAMXqEeWz5v6D_mBN7g" name="ComponentMyFirstRestResource" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_n-grAcXqEeWz5v6D_mBN7g" processName="myfirstproject.MyFirstRestResource"/>
+    <sca:service xmi:id="_n-qcAMXqEeWz5v6D_mBN7g" name="Myfirstrestresource">
+      <sca:interface.wsdl xmi:id="_n-qcAcXqEeWz5v6D_mBN7g" interface="http://www.example.com/namespaces/tns/1454004719142#wsdl.interface(Myfirstrestresource)" scaext:wsdlLocation="../Service%20Descriptors/MyFirstRestResource.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

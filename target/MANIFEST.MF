@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.jms)",com.tibco.bw.sharedresource.model; filt
+ er:="(name=bw.httpconnector)",com.tibco.bw.sharedresource.model; filt
+ er:="(name=bw.jmsconnection)",com.tibco.bw.sharedresource.model; filt
+ er:="(name=bw.jndiconfiguration)",com.tibco.bw.binding.model; filter:
+ ="(name=bw.rest)"
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+TIBCO-BW-Version: 6.2.2 V18 2015-07-14
+Bundle-Version: 1.0.0.201602081321
+Bundle-Name: MyFirstProject Module
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Bundle-ManifestVersion: 2
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+Bundle-SymbolicName: MyFirstProject
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+
