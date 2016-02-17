@@ -8,7 +8,7 @@
   <packaging>eclipse-plugin</packaging>
   <properties>
     <shared.p2.repo>${tibco.home}/bw/${bw.version}/maven/sharedmodulerepo</shared.p2.repo>
-    <tibco.home>C:\tibco</tibco.home>
+    <tibco.home>/home/ec2-user/tibcobw6</tibco.home>
     <main.p2.repo>${tibco.home}/bw/${bw.version}/maven/p2repo</main.p2.repo>
     <bw.version>6.2</bw.version>
     <tycho-version>0.22.0</tycho-version>
